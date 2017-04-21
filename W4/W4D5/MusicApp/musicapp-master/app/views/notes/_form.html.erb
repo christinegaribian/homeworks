@@ -1,0 +1,6 @@
+<form action='http://localhost:3000<%= request.path %>/notes' method="post">
+  <%= auth_token %>
+  <label for="note">New note</label>
+  <textarea name="note[content]"></textarea>
+  <input type="submit">
+</form>
